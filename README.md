@@ -11,16 +11,15 @@
 
 Here're some of the project's best features:
 
-- Full Stack MERN Application (MongoDB Express.js React Node.js)
+Full Stack MERN Application (MongoDB Express.js React Node.js)
 - Secure user authentication and authorization using JSON Web Tokens (JWT)
 - User account creation and management (Deposit Withdraw and Transfer)
 - Admin dashboard for managing user account requests and bank account statuses
 - Responsive design using Tailwindcss for compatibility with a range of devices
 - Efficient and intuitive user interface for ease of use
-
-<h2>🛠️ Installation Steps:</h2>
-
-[Installation Steps on YT](https://www.youtube.com/watch?v=W8Wuxw3mHSw)
+- Voice Banking - Voice-controlled navigation using Web Speech API for hands-free banking operations
+- AI Financial Assistant - Interactive chatbot with financial insights spending analysis and budget recommendations with visual charts
+- Collaborative Savings Goals - Real-time goal tracking system with progress visualization and multi-user contribution support
 
 ### Adding a Manual Owner(Admin)
 
