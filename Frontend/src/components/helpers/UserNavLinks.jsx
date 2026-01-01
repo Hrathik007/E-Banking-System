@@ -2,7 +2,7 @@ import React from "react";
 import { AiFillSetting } from "react-icons/ai";
 import { BiCoinStack, BiMoney } from "react-icons/bi";
 import { BsFilePersonFill, BsGridFill } from "react-icons/bs";
-import { FaCoins, FaMoneyBillWaveAlt } from "react-icons/fa";
+import { FaCoins, FaMoneyBillWaveAlt, FaMicrophone, FaRobot, FaUsers } from "react-icons/fa";
 import { IoSend } from "react-icons/io5";
 import {
   MdCircleNotifications,
@@ -103,6 +103,21 @@ export const UserNavLinks = ({ user }) => {
       title: "Setting",
       icon: AiFillSetting,
       to: userStatus === 0 ? `/profile/${user.id}/update` : " ",
+    },
+    {
+      title: "Voice Banking",
+      icon: FaMicrophone,
+      to: userStatus === 0 ? "/voice-banking" : " ",
+    },
+    {
+      title: "AI Assistant",
+      icon: FaRobot,
+      to: userStatus === 0 ? "/ai-assistant" : " ",
+    },
+    {
+      title: "Savings Goals",
+      icon: FaUsers,
+      to: userStatus === 0 ? "/savings-goals" : " ",
     },
     {
       title: "Contact Support",

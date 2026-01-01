@@ -34,6 +34,9 @@ import { RetrieveBalance } from "./components/account/RetrieveBalance";
 import { Contact } from "./components/forms/userForms/Contact";
 import { UnactiveSuspendedUser } from "./components/shared/UnactiveSuspendedUser";
 import { Account } from "./components/account/Account";
+import { VoiceBanking } from "./components/account/VoiceBanking";
+import { AIFinancialAssistant } from "./components/account/AIFinancialAssistant";
+import { SavingsGoals } from "./components/account/SavingsGoals";
 
 function App() {
   //Detect user
@@ -141,6 +144,10 @@ function App() {
               element={<RetrieveBalance />}
             />
             <Route exact path="/contact" element={<Contact />} />
+            {/* New Features */}
+            <Route exact path="/voice-banking" element={<VoiceBanking />} />
+            <Route exact path="/ai-assistant" element={<AIFinancialAssistant />} />
+            <Route exact path="/savings-goals" element={<SavingsGoals />} />
             <Route path="*" element={<NotFoundPage />} />
           </Route>
         </Routes>

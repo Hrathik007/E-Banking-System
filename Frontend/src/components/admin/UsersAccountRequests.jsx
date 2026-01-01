@@ -149,9 +149,9 @@ const UsersAccountRequests = ({ accountRequestsList }) => {
           scope="row"
           className="p-2 text-gray-900 whitespace-nowrap  border-x-2 text-center"
         >
-          {new Intl.NumberFormat("ar-EG", {
+          {new Intl.NumberFormat("en-US", {
             style: "currency",
-            currency: "EGP",
+            currency: "INR",
           }).format(request.initial_balance)}
         </th>
 
