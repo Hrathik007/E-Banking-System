@@ -1,14 +1,12 @@
 import axios from "axios";
 
-const API_URL =
-  process.env.NODE_ENV === "production"
-    ? "https://ebank-2t3r.onrender.com/api/request/"
-    : "http://localhost:5000/api/request/";
+const API_URL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api/request/`
+  : "http://localhost:5000/api/request/";
 
-const CREATE_ACCOUNT_API_URL =
-  process.env.NODE_ENV === "production"
-    ? "https://ebank-2t3r.onrender.com/api/account/create"
-    : "http://localhost:5000/api/account/create";
+const CREATE_ACCOUNT_API_URL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api/account/create`
+  : "http://localhost:5000/api/account/create";
 
 //Get All Account Requests
 const getAllAccountRequests = async (adminData) => {

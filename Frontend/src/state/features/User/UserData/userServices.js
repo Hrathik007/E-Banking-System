@@ -1,14 +1,12 @@
 import axios from "axios";
 
-const API_URL =
-  process.env.NODE_ENV === "production"
-    ? "https://ebank-2t3r.onrender.com/api/users/"
-    : "http://localhost:5000/api/users/";
+const API_URL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api/users/`
+  : "http://localhost:5000/api/users/";
 
-const API_URL_REQUEST =
-  process.env.NODE_ENV === "production"
-    ? "https://ebank-2t3r.onrender.com/api/request/create"
-    : "http://localhost:5000/api/request/create";
+const API_URL_REQUEST = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api/request/create`
+  : "http://localhost:5000/api/request/create";
 
 //Get User
 const getUser = async (userData) => {

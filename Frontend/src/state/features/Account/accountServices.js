@@ -1,9 +1,8 @@
 import axios from "axios";
 
-const API_URL =
-  process.env.NODE_ENV === "production"
-    ? "https://ebank-2t3r.onrender.com/api/account/"
-    : "http://localhost:5000/api/account/";
+const API_URL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api/account/`
+  : "http://localhost:5000/api/account/";
 
 //Get Account
 const getAccount = async (payload) => {
